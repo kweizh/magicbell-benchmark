@@ -1,0 +1,7 @@
+{
+  "library_name": "MagicBell",
+  "complexity_level": "simple single terminal command",
+  "deep_research_path": "../../plan.md",
+  "task_name": "broadcast_with_action_url",
+  "output_dir": "../../scratchpad/pending-tasks"
+}
