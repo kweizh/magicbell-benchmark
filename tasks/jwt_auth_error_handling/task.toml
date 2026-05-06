@@ -1,0 +1,17 @@
+[environment]
+image = "harbor-task-jwt-auth-error-handling"
+build_context = "environment"
+
+[environment.env]
+POCHI_API_KEY = "${POCHI_API_KEY}"
+POCHI_LOG = "debug"
+
+[execution]
+start_command = "cd /home/user/magicbell-app && npm run dev"
+
+[verifier]
+dependencies = [ "requests", "PyJWT" ]
+
+[verifier.env]
+POCHI_API_KEY = "${POCHI_API_KEY}"
+POCHI_LOG = "debug"
