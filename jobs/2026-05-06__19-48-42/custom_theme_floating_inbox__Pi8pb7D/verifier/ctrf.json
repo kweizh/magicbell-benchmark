@@ -1,0 +1,47 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 3,
+            "passed": 3,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1778068650.5896816,
+            "stop": 1778068650.6417086
+        },
+        "tests": [
+            {
+                "name": "test_final_state.py::test_theme_css_exists_and_contains_variables",
+                "status": "passed",
+                "duration": 0.0005215238779783249,
+                "start": 1778068650.601405,
+                "stop": 1778068650.6021311,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            },
+            {
+                "name": "test_final_state.py::test_package_json_contains_magicbell",
+                "status": "passed",
+                "duration": 0.0004359988961368799,
+                "start": 1778068650.6023731,
+                "stop": 1778068650.6029418,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            },
+            {
+                "name": "test_final_state.py::test_app_loads",
+                "status": "passed",
+                "duration": 0.03773836302570999,
+                "start": 1778068650.6031103,
+                "stop": 1778068650.6412883,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            }
+        ]
+    }
+}

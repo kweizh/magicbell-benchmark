@@ -1,0 +1,44 @@
+downloading uv 0.9.7 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+Downloading pygments (1.2MiB)
+ Downloading pygments
+Installed 7 packages in 32ms
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 3 items
+
+tests/test_final_state.py ..F                                            [100%]
+
+=================================== FAILURES ===================================
+____________________ test_output_json_validity_and_content _____________________
+
+    def test_output_json_validity_and_content():
+        """Priority 3: Check the content of the API response."""
+        with open(OUTPUT_FILE, "r") as f:
+            try:
+                data = json.load(f)
+            except json.JSONDecodeError:
+                pytest.fail(f"File {OUTPUT_FILE} does not contain valid JSON.")
+    
+>       assert "broadcast" in data, f"Expected 'broadcast' object in response, got: {data}"
+E       AssertionError: Expected 'broadcast' object in response, got: {'errors': [{'code': 'invalid_jwt_format', 'message': 'expected authorization header format: Bearer <token>', 'suggestion': "Please provide a valid JWT in the 'Authorization' header", 'help_link': 'https://www.magicbell.com/docs/api/authentication'}]}
+E       assert 'broadcast' in {'errors': [{'code': 'invalid_jwt_format', 'help_link': 'https://www.magicbell.com/docs/api/authentication', 'message'...thorization header format: Bearer <token>', 'suggestion': "Please provide a valid JWT in the 'Authorization' header"}]}
+
+tests/test_final_state.py:26: AssertionError
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_final_state.py::test_script_exists_and_executable
+PASSED tests/test_final_state.py::test_output_file_exists
+FAILED tests/test_final_state.py::test_output_json_validity_and_content - Ass...
+========================= 1 failed, 2 passed in 0.03s ==========================

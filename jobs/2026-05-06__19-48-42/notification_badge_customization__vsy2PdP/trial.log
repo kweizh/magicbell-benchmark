@@ -1,0 +1,86 @@
+Running command: apt-get update && apt-get install -y curl ripgrep
+Command outputs captured
+Running command: set -euo pipefail; curl -fsSL https://getpochi.com/install.sh | bash  && mkdir -p /logs/agent/pochi && ~/.pochi/bin/pochi --version
+Command outputs captured
+Running command: ln -sf ~/.pochi/bin/pochi /usr/local/bin/pochi
+Command outputs captured
+Running command: echo notification_badge_customization__vsy2PdP > /logs/artifacts/trial_id
+Command outputs captured
+Running command: mkdir -p ~/.pochi && cat << 'EOF' | sed -e "s/OPENAI_API_KEY/${OPENAI_API_KEY}/g" -e "s/DEEPINFRA_API_KEY/${DEEPINFRA_API_KEY}/g" -e "s/ANTHROPIC_API_KEY/${ANTHROPIC_API_KEY}/g" > ~/.pochi/config.jsonc
+{
+  "providers": {
+    "deepinfra": {
+      "kind": "openai",
+      "baseURL": "https://api.deepinfra.com/v1/openai",
+      "apiKey": "DEEPINFRA_API_KEY",
+      "models": {
+        "zai-org/GLM-4.7-Flash": {
+          "name": "glm-4.7-flash"
+        },
+        "moonshotai/Kimi-K2.6": {
+          "name": "kimi-K2.6"
+        },
+        "deepseek-ai/DeepSeek-V4-Pro": {
+          "name": "DeepSeek-V4-Pro"
+        }
+      }
+    },
+    "anthropic": {
+      "kind": "openai",
+      "baseURL": "https://api.anthropic.com/v1",
+      "apiKey": "ANTHROPIC_API_KEY",
+      "models": {
+        "claude-opus-4-6": {
+          "name": "claude-opus-4-6"
+        }
+      }
+    },
+    "openai": {
+      "kind": "openai",
+      "baseURL": "https://api.openai.com/v1",
+      "apiKey": "OPENAI_API_KEY",
+      "models": {
+        "gpt-5.4": {
+          "name": "gpt-5.4"
+        }
+      }
+    }
+  }
+}
+EOF
+Command outputs captured
+Running command: mkdir -p /logs/artifacts
+Command outputs captured
+Running command: export PATH="$HOME/.pochi/bin:$PATH"; pochi --model google/gemini-3-flash --max-steps 200 --max-retries 10 --blobs-dir /logs/agent/pochi/blobs --experimental-stream-trajectory /logs/agent/pochi/trajectory.jsonl > >(tee /logs/agent/pochi/stdout.txt) 2> >(tee /logs/agent/pochi/stderr.txt >&2) <<'EOF'
+# Preserving your work
+
+Save a copy of files you create during this task to `/logs/artifacts/`. This directory is preserved after the run so outputs can be inspected. Organize with subdirectories if helpful (e.g., `/logs/artifacts/code/`, `/logs/artifacts/reports/`). The directory already exists and is writable.
+
+---
+
+# MagicBell Notification Badge Customization
+
+## Background
+You have a React application using MagicBell's `FloatingInbox`. By default, the trigger button is a bell icon. You need to customize this trigger button (often referred to as the notification badge) by providing a custom `ButtonComponent`.
+
+## Requirements
+- Create a custom button component to replace the default MagicBell trigger.
+- The custom button must be a `<button>` element with the ID `custom-bell-btn`.
+- The button text must be `My Alerts`.
+- The button must correctly receive and use the `onClick` and `ref` props so that clicking it toggles the inbox.
+- Apply this custom component to the `FloatingInbox` in `src/App.jsx`.
+
+## Implementation Guide
+1. Open `/home/user/app/src/App.jsx`.
+2. Define a new component (e.g., `CustomButton`) using `React.forwardRef` to handle the `ref` and `onClick` props.
+3. Return `<button id="custom-bell-btn" onClick={onClick} ref={ref}>My Alerts</button>`.
+4. Pass your new component to the `ButtonComponent` prop of the `<FloatingInbox />`.
+
+## Constraints
+- Project path: `/home/user/app`
+- Start command: `npm start`
+- Port: `3000`
+EOF
+Command outputs captured
+Running command: rm -f ~/.pochi/config.jsonc
+Command outputs captured

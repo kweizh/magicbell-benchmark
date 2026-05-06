@@ -1,0 +1,69 @@
+downloading uv 0.9.7 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+Downloading pygments (1.2MiB)
+ Downloading pygments
+Installed 7 packages in 31ms
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 3 items
+
+tests/test_final_state.py FFF                                            [100%]
+
+=================================== FAILURES ===================================
+________________________ test_script_execution_success _________________________
+
+run_script_with_mock_server = CompletedProcess(args=['/home/user/project/setup_twilio.sh'], returncode=7, stdout='', stderr="  % Total    % Received... --:--:-- --:--:--     0\ncurl: (7) Failed to connect to localhost port 8080 after 0 ms: Couldn't connect to server\n")
+
+    def test_script_execution_success(run_script_with_mock_server):
+        result = run_script_with_mock_server
+>       assert result.returncode == 0, f"setup_twilio.sh failed with exit code {result.returncode}. Stderr: {result.stderr}"
+E       AssertionError: setup_twilio.sh failed with exit code 7. Stderr:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+E                                          Dload  Upload   Total   Spent    Left  Speed
+E         
+E           0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+E           0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+E         curl: (7) Failed to connect to localhost port 8080 after 0 ms: Couldn't connect to server
+E         
+E       assert 7 == 0
+E        +  where 7 = CompletedProcess(args=['/home/user/project/setup_twilio.sh'], returncode=7, stdout='', stderr="  % Total    % Received... --:--:-- --:--:--     0\ncurl: (7) Failed to connect to localhost port 8080 after 0 ms: Couldn't connect to server\n").returncode
+
+tests/test_final_state.py:106: AssertionError
+___________________________ test_mock_output_exists ____________________________
+
+run_script_with_mock_server = CompletedProcess(args=['/home/user/project/setup_twilio.sh'], returncode=7, stdout='', stderr="  % Total    % Received... --:--:-- --:--:--     0\ncurl: (7) Failed to connect to localhost port 8080 after 0 ms: Couldn't connect to server\n")
+
+    def test_mock_output_exists(run_script_with_mock_server):
+>       assert os.path.isfile(MOCK_OUTPUT_FILE), "Mock server did not write output file. The script might not have made the request."
+E       AssertionError: Mock server did not write output file. The script might not have made the request.
+E       assert False
+E        +  where False = <function isfile at 0x77e237ef8220>('/tmp/mock_output.json')
+E        +    where <function isfile at 0x77e237ef8220> = <module 'posixpath' (frozen)>.isfile
+E        +      where <module 'posixpath' (frozen)> = os.path
+
+tests/test_final_state.py:109: AssertionError
+_____________________________ test_request_details _____________________________
+
+run_script_with_mock_server = CompletedProcess(args=['/home/user/project/setup_twilio.sh'], returncode=7, stdout='', stderr="  % Total    % Received... --:--:-- --:--:--     0\ncurl: (7) Failed to connect to localhost port 8080 after 0 ms: Couldn't connect to server\n")
+
+    def test_request_details(run_script_with_mock_server):
+>       with open(MOCK_OUTPUT_FILE, "r") as f:
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/tmp/mock_output.json'
+
+tests/test_final_state.py:112: FileNotFoundError
+=========================== short test summary info ============================
+FAILED tests/test_final_state.py::test_script_execution_success - AssertionEr...
+FAILED tests/test_final_state.py::test_mock_output_exists - AssertionError: M...
+FAILED tests/test_final_state.py::test_request_details - FileNotFoundError: [...
+============================== 3 failed in 1.59s ===============================

@@ -1,0 +1,50 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 3,
+            "passed": 2,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1778068926.4336782,
+            "stop": 1778068926.4616706
+        },
+        "tests": [
+            {
+                "name": "test_final_state.py::test_script_exists_and_executable",
+                "status": "passed",
+                "duration": 0.0005612170789390802,
+                "start": 1778068926.444299,
+                "stop": 1778068926.445073,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            },
+            {
+                "name": "test_final_state.py::test_output_file_exists",
+                "status": "passed",
+                "duration": 0.0004735959228128195,
+                "start": 1778068926.4453561,
+                "stop": 1778068926.4459717,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            },
+            {
+                "name": "test_final_state.py::test_output_json_validity_and_content",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0007575501222163439,
+                "start": 1778068926.4461815,
+                "stop": 1778068926.461495,
+                "retries": 0,
+                "file_path": "test_final_state.py",
+                "trace": "def test_output_json_validity_and_content():\n        \"\"\"Priority 3: Check the content of the API response.\"\"\"\n        with open(OUTPUT_FILE, \"r\") as f:\n            try:\n                data = json.load(f)\n            except json.JSONDecodeError:\n                pytest.fail(f\"File {OUTPUT_FILE} does not contain valid JSON.\")\n    \n>       assert \"broadcast\" in data, f\"Expected 'broadcast' object in response, got: {data}\"\nE       AssertionError: Expected 'broadcast' object in response, got: {'errors': [{'code': 'invalid_jwt_format', 'message': 'expected authorization header format: Bearer <token>', 'suggestion': \"Please provide a valid JWT in the 'Authorization' header\", 'help_link': 'https://www.magicbell.com/docs/api/authentication'}]}\nE       assert 'broadcast' in {'errors': [{'code': 'invalid_jwt_format', 'help_link': 'https://www.magicbell.com/docs/api/authentication', 'message'...thorization header format: Bearer <token>', 'suggestion': \"Please provide a valid JWT in the 'Authorization' header\"}]}\n\ntests/test_final_state.py:26: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            }
+        ]
+    }
+}

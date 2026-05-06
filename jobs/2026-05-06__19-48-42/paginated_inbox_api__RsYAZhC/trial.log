@@ -1,0 +1,91 @@
+Running command: apt-get update && apt-get install -y curl ripgrep
+Command outputs captured
+Running command: set -euo pipefail; curl -fsSL https://getpochi.com/install.sh | bash  && mkdir -p /logs/agent/pochi && ~/.pochi/bin/pochi --version
+Command outputs captured
+Running command: ln -sf ~/.pochi/bin/pochi /usr/local/bin/pochi
+Command outputs captured
+Running command: echo paginated_inbox_api__RsYAZhC > /logs/artifacts/trial_id
+Command outputs captured
+Running command: mkdir -p ~/.pochi && cat << 'EOF' | sed -e "s/OPENAI_API_KEY/${OPENAI_API_KEY}/g" -e "s/DEEPINFRA_API_KEY/${DEEPINFRA_API_KEY}/g" -e "s/ANTHROPIC_API_KEY/${ANTHROPIC_API_KEY}/g" > ~/.pochi/config.jsonc
+{
+  "providers": {
+    "deepinfra": {
+      "kind": "openai",
+      "baseURL": "https://api.deepinfra.com/v1/openai",
+      "apiKey": "DEEPINFRA_API_KEY",
+      "models": {
+        "zai-org/GLM-4.7-Flash": {
+          "name": "glm-4.7-flash"
+        },
+        "moonshotai/Kimi-K2.6": {
+          "name": "kimi-K2.6"
+        },
+        "deepseek-ai/DeepSeek-V4-Pro": {
+          "name": "DeepSeek-V4-Pro"
+        }
+      }
+    },
+    "anthropic": {
+      "kind": "openai",
+      "baseURL": "https://api.anthropic.com/v1",
+      "apiKey": "ANTHROPIC_API_KEY",
+      "models": {
+        "claude-opus-4-6": {
+          "name": "claude-opus-4-6"
+        }
+      }
+    },
+    "openai": {
+      "kind": "openai",
+      "baseURL": "https://api.openai.com/v1",
+      "apiKey": "OPENAI_API_KEY",
+      "models": {
+        "gpt-5.4": {
+          "name": "gpt-5.4"
+        }
+      }
+    }
+  }
+}
+EOF
+Command outputs captured
+Running command: mkdir -p /logs/artifacts
+Command outputs captured
+Running command: export PATH="$HOME/.pochi/bin:$PATH"; pochi --model google/gemini-3-flash --max-steps 200 --max-retries 10 --blobs-dir /logs/agent/pochi/blobs --experimental-stream-trajectory /logs/agent/pochi/trajectory.jsonl > >(tee /logs/agent/pochi/stdout.txt) 2> >(tee /logs/agent/pochi/stderr.txt >&2) <<'EOF'
+# Preserving your work
+
+Save a copy of files you create during this task to `/logs/artifacts/`. This directory is preserved after the run so outputs can be inspected. Organize with subdirectories if helpful (e.g., `/logs/artifacts/code/`, `/logs/artifacts/reports/`). The directory already exists and is writable.
+
+---
+
+# Fetch Notifications with Pagination
+
+## Background
+MagicBell provides a REST API to fetch a user's notifications. You need to write a script that fetches all notifications for a given user using the `GET /notifications` endpoint, handling pagination to ensure all records are retrieved.
+
+## Requirements
+- Write a Node.js script `fetch_notifications.js` in `/home/user/magicbell-task`.
+- The script must generate a User JWT for `test_user@example.com` using the `jsonwebtoken` package with the `HS256` algorithm. The JWT payload must include `user_email` and `api_key`.
+- Use the generated JWT to authenticate with the MagicBell API.
+- Fetch all notifications for the user by making requests to `<MAGICBELL_API_URL>/notifications`.
+- Implement pagination using the `limit` (e.g., set to 2) and `starting_after` query parameters until no more notifications are returned.
+- Extract the `title` of each notification and save the full list of titles as a JSON array to `/home/user/magicbell-task/output.json`.
+
+## Implementation Guide
+1. Initialize a Node.js project and install `jsonwebtoken` and `axios` (or use built-in `fetch`).
+2. Read `MAGICBELL_API_KEY`, `MAGICBELL_API_SECRET`, and `MAGICBELL_API_URL` from environment variables. If `MAGICBELL_API_URL` is not set, default to `https://api.magicbell.com/v2`.
+3. Generate the User JWT using the secret.
+4. Make a `GET` request to `${MAGICBELL_API_URL}/notifications?limit=2` with the `Authorization: Bearer <JWT>` header or `X-MAGICBELL-USER-JWT: <JWT>`.
+5. The response contains a `notifications` array. If it's not empty, get the `id` of the last notification and use it as `starting_after` in the next request.
+6. Keep fetching until the `notifications` array is empty.
+7. Write the collected titles to `output.json`.
+
+## Constraints
+- Project path: `/home/user/magicbell-task`
+- Log file: `/home/user/magicbell-task/output.json`
+- Run command: `node fetch_notifications.js`
+- Environment variables: `MAGICBELL_API_KEY`, `MAGICBELL_API_SECRET`, `MAGICBELL_API_URL`
+EOF
+Command outputs captured
+Running command: rm -f ~/.pochi/config.jsonc
+Command outputs captured

@@ -1,0 +1,38 @@
+- Initializing MCP connections...
+You
+# Preserving your work Save a copy of files you create during this task to `/logs/artifacts/`. This directory is preserved after the run so outputs can be inspected. Organize with subdirectories if helpful (e.g., `/logs/artifacts/code/`, `/logs/artifacts/reports/`). The directory already exists and is writable. --- # Mark All Notifications as Read API ## Background MagicBell provides a REST API to manage notifications. You need to write a simple shell script to mark all notifications as read for a specific user using the MagicBell API. ## Requirements - Create a shell script at `/home/user/mark_read.sh`. - The script must make a `POST` request to `https://api.magicbell.com/notifications/read`. - It must include the `X-MAGICBELL-API-KEY` header, reading its value from the `MAGICBELL_API_KEY` environment variable. - It must include the `X-MAGICBELL-USER-EMAIL` header, reading its value from the `MAGICBELL_USER_EMAIL` environment variable. - The script must output the raw response from the API to stdout. ## Constraints - Project path: `/home/user`   
+
+Pochi
+📋 Updating todo list (3 items) ✔ 
+📋 Updating todo list (3 items) ✔ 
+✏️  Writing /home/user/mark_read.sh ✔ 
+📋 Updating todo list (3 items) ✔ 
+💫 Executing chmod +x /home/user/mark_read.sh ✔ 
+📋 Updating todo list (3 items) ✔ 
+💫 Executing mkdir -p /logs/artifacts/code/ && cp /home/user/mark_read.sh /logs/artifacts/code/mark_read.sh ✔ 
+📋 Updating todo list (3 items) ✔ 
+🎉 Task Completed
+I have created the shell script at `/home/user/mark_read.sh` to mark all notifications as read using the MagicBell API.
+
+### Script Details:
+- **Path:** `/home/user/mark_read.sh`
+- **Method:** `POST`
+- **Endpoint:** `https://api.magicbell.com/notifications/read`
+- **Headers:**
+  - `X-MAGICBELL-API-KEY`: Sourced from `$MAGICBELL_API_KEY`
+  - `X-MAGICBELL-USER-EMAIL`: Sourced from `$MAGICBELL_USER_EMAIL`
+- **Output:** The script outputs the raw API response to stdout.
+
+### Usage:
+1. Ensure the environment variables are set:
+   ```bash
+   export MAGICBELL_API_KEY="your_api_key"
+   export MAGICBELL_USER_EMAIL="user@example.com"
+   ```
+2. Run the script:
+   ```bash
+   /home/user/mark_read.sh
+   ```
+
+A copy of the script has also been saved to `/logs/artifacts/code/mark_read.sh`.   
+  

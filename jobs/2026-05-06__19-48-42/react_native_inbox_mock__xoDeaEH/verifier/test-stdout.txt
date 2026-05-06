@@ -1,0 +1,49 @@
+downloading uv 0.9.7 x86_64-unknown-linux-gnu
+no checksums to verify
+installing to /root/.local/bin
+  uv
+  uvx
+everything's installed!
+
+To add $HOME/.local/bin to your PATH, either restart your shell or run:
+
+    source $HOME/.local/bin/env (sh, bash, zsh)
+    source $HOME/.local/bin/env.fish (fish)
+Downloading pygments (1.2MiB)
+ Downloading pygments
+Installed 7 packages in 17ms
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.4.1, pluggy-1.6.0
+rootdir: /tests
+plugins: json-ctrf-0.3.5
+collected 1 item
+
+tests/test_final_state.py F                                              [100%]
+
+=================================== FAILURES ===================================
+_________________________ test_react_native_inbox_mock _________________________
+
+start_app = None
+
+    def test_react_native_inbox_mock(start_app):
+        reason = "The application should display a mock MagicBell inbox fetching notifications and allowing users to mark them as read."
+        truth = "Navigate to http://localhost:3000. Verify that the page loads and displays notifications. Click the 'Mark all as read' button. Verify that a POST request is made to `https://api.magicbell.com/notifications/read`."
+    
+        verifier = PochiVerifier()
+        result = verifier.verify(
+            reason=reason,
+            truth=truth,
+            use_browser_agent=True,
+            trajectory_dir="/logs/verifier/pochi/test_react_native_inbox_mock"
+        )
+>       assert result.status == "pass", f"Browser verification failed: {result.reason}"
+E       AssertionError: Browser verification failed: The test failed because the application did not display notifications as required. While the page at http://localhost:3000 loaded and the 'Mark all as read' button was present and functional (triggering a POST request), the fetch request for notifications (GET https://api.magicbell.com/notifications) returned a 401 Unauthorized error. This resulted in the page displaying "No notifications" instead of the expected notification list, failing the second verification step.
+E       assert 'fail' == 'pass'
+E         
+E         - pass
+E         + fail
+
+tests/test_final_state.py:58: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_final_state.py::test_react_native_inbox_mock - AssertionErr...
+======================== 1 failed in 314.04s (0:05:14) =========================

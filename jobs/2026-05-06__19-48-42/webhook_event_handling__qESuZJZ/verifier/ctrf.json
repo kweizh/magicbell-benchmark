@@ -1,0 +1,29 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 1,
+            "passed": 1,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1778068881.5636163,
+            "stop": 1778068884.2077575
+        },
+        "tests": [
+            {
+                "name": "test_final_state.py::test_webhook_event_handling",
+                "status": "passed",
+                "duration": 2.610919137019664,
+                "start": 1778068881.5948565,
+                "stop": 1778068884.2074165,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            }
+        ]
+    }
+}

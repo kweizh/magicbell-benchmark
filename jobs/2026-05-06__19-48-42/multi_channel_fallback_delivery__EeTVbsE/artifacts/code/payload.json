@@ -1,0 +1,19 @@
+{
+  "broadcast": {
+    "title": "Alert",
+    "content": "System down",
+    "action_url": "https://example.com/alert",
+    "recipients": [
+      {
+        "email": "admin@example.com"
+      }
+    ],
+    "overrides": {
+      "channels": {
+        "slack": {
+          "action_url": "https://example.com/slack-alert"
+        }
+      }
+    }
+  }
+}

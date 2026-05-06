@@ -1,0 +1,32 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 1,
+            "passed": 0,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1778068560.451855,
+            "stop": 1778068563.6042206
+        },
+        "tests": [
+            {
+                "name": "test_final_state.py::test_webhook_processing",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 2.6301824778784066,
+                "start": 1778068560.9218857,
+                "stop": 1778068563.6038575,
+                "retries": 0,
+                "file_path": "test_final_state.py",
+                "trace": "mock_magicbell_server = None, start_app = None\n\n    def test_webhook_processing(mock_magicbell_server, start_app):\n        # Clear any previous requests\n        received_requests.clear()\n    \n        # Send request to Express app\n        webhook_payload = {\n            \"type\": \"invoice.payment_succeeded\",\n            \"data\": {\n                \"object\": {\n                    \"subscription\": \"sub_test123\",\n                    \"customer_email\": \"user@example.com\"\n                }\n            }\n        }\n    \n        req = urllib.request.Request(\n            \"http://localhost:3000/webhook/stripe\",\n            data=json.dumps(webhook_payload).encode('utf-8'),\n            headers={'Content-Type': 'application/json'},\n            method='POST'\n        )\n    \n        try:\n            response = urllib.request.urlopen(req)\n            assert response.getcode() == 200, f\"Expected status code 200, got {response.getcode()}\"\n        except urllib.error.HTTPError as e:\n            pytest.fail(f\"Webhook request failed with status {e.code}: {e.read().decode('utf-8')}\")\n        except urllib.error.URLError as e:\n            pytest.fail(f\"Could not connect to webhook endpoint: {e.reason}\")\n    \n        # Give the app a moment to make the outgoing request if it's async\n        time.sleep(1)\n    \n        # Verify mock server received the broadcast\n        assert len(received_requests) > 0, \"Mock MagicBell server did not receive any requests.\"\n    \n        broadcast_req = received_requests[0]\n    \n        # Verify path\n>       assert broadcast_req[\"path\"] == \"/v2/broadcasts\", f\"Expected request to /v2/broadcasts, got {broadcast_req['path']}\"\nE       AssertionError: Expected request to /v2/broadcasts, got /broadcasts\nE       assert '/broadcasts' == '/v2/broadcasts'\nE         \nE         - /v2/broadcasts\nE         ? ---\nE         + /broadcasts\n\ntests/test_final_state.py:121: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            }
+        ]
+    }
+}

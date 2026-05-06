@@ -1,0 +1,38 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 2,
+            "passed": 2,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1778068232.37742,
+            "stop": 1778068232.3894076
+        },
+        "tests": [
+            {
+                "name": "test_final_state.py::test_script_exists_and_executable",
+                "status": "passed",
+                "duration": 0.0005100728012621403,
+                "start": 1778068232.387741,
+                "stop": 1778068232.38845,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            },
+            {
+                "name": "test_final_state.py::test_script_contains_correct_curl_command",
+                "status": "passed",
+                "duration": 0.0004856819286942482,
+                "start": 1778068232.3886375,
+                "stop": 1778068232.389248,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            }
+        ]
+    }
+}

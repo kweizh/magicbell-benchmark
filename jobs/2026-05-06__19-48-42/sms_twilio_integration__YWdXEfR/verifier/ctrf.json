@@ -1,0 +1,56 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 3,
+            "passed": 0,
+            "failed": 3,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1778068644.7043116,
+            "stop": 1778068646.2944555
+        },
+        "tests": [
+            {
+                "name": "test_final_state.py::test_script_execution_success",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 1.5209269172046334,
+                "start": 1778068644.7193422,
+                "stop": 1778068646.2860887,
+                "retries": 0,
+                "file_path": "test_final_state.py",
+                "trace": "run_script_with_mock_server = CompletedProcess(args=['/home/user/project/setup_twilio.sh'], returncode=7, stdout='', stderr=\"  % Total    % Received... --:--:-- --:--:--     0\\ncurl: (7) Failed to connect to localhost port 8080 after 0 ms: Couldn't connect to server\\n\")\n\n    def test_script_execution_success(run_script_with_mock_server):\n        result = run_script_with_mock_server\n>       assert result.returncode == 0, f\"setup_twilio.sh failed with exit code {result.returncode}. Stderr: {result.stderr}\"\nE       AssertionError: setup_twilio.sh failed with exit code 7. Stderr:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\nE                                          Dload  Upload   Total   Spent    Left  Speed\nE         \nE           0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\nE           0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\nE         curl: (7) Failed to connect to localhost port 8080 after 0 ms: Couldn't connect to server\nE         \nE       assert 7 == 0\nE        +  where 7 = CompletedProcess(args=['/home/user/project/setup_twilio.sh'], returncode=7, stdout='', stderr=\"  % Total    % Received... --:--:-- --:--:--     0\\ncurl: (7) Failed to connect to localhost port 8080 after 0 ms: Couldn't connect to server\\n\").returncode\n\ntests/test_final_state.py:106: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_final_state.py::test_mock_output_exists",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.000697022769600153,
+                "start": 1778068646.2865088,
+                "stop": 1778068646.2909777,
+                "retries": 0,
+                "file_path": "test_final_state.py",
+                "trace": "run_script_with_mock_server = CompletedProcess(args=['/home/user/project/setup_twilio.sh'], returncode=7, stdout='', stderr=\"  % Total    % Received... --:--:-- --:--:--     0\\ncurl: (7) Failed to connect to localhost port 8080 after 0 ms: Couldn't connect to server\\n\")\n\n    def test_mock_output_exists(run_script_with_mock_server):\n>       assert os.path.isfile(MOCK_OUTPUT_FILE), \"Mock server did not write output file. The script might not have made the request.\"\nE       AssertionError: Mock server did not write output file. The script might not have made the request.\nE       assert False\nE        +  where False = <function isfile at 0x77e237ef8220>('/tmp/mock_output.json')\nE        +    where <function isfile at 0x77e237ef8220> = <module 'posixpath' (frozen)>.isfile\nE        +      where <module 'posixpath' (frozen)> = os.path\n\ntests/test_final_state.py:109: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            },
+            {
+                "name": "test_final_state.py::test_request_details",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0005159981083124876,
+                "start": 1778068646.2912176,
+                "stop": 1778068646.2942684,
+                "retries": 0,
+                "file_path": "test_final_state.py",
+                "trace": "run_script_with_mock_server = CompletedProcess(args=['/home/user/project/setup_twilio.sh'], returncode=7, stdout='', stderr=\"  % Total    % Received... --:--:-- --:--:--     0\\ncurl: (7) Failed to connect to localhost port 8080 after 0 ms: Couldn't connect to server\\n\")\n\n    def test_request_details(run_script_with_mock_server):\n>       with open(MOCK_OUTPUT_FILE, \"r\") as f:\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/tmp/mock_output.json'\n\ntests/test_final_state.py:112: FileNotFoundError",
+                "message": "The test failed in the call phase"
+            }
+        ]
+    }
+}

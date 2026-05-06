@@ -1,0 +1,56 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 4,
+            "passed": 4,
+            "failed": 0,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1778068479.3455791,
+            "stop": 1778068483.3406372
+        },
+        "tests": [
+            {
+                "name": "test_final_state.py::test_backend_auth_endpoint",
+                "status": "passed",
+                "duration": 1.356765812030062,
+                "start": 1778068479.7913666,
+                "stop": 1778068481.1489573,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            },
+            {
+                "name": "test_final_state.py::test_frontend_dependencies_updated",
+                "status": "passed",
+                "duration": 0.0007568420842289925,
+                "start": 1778068481.1494462,
+                "stop": 1778068481.150456,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            },
+            {
+                "name": "test_final_state.py::test_frontend_app_jsx_imports",
+                "status": "passed",
+                "duration": 0.0005376539193093777,
+                "start": 1778068481.150726,
+                "stop": 1778068481.1514258,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            },
+            {
+                "name": "test_final_state.py::test_frontend_build_succeeds",
+                "status": "passed",
+                "duration": 2.1885044563096017,
+                "start": 1778068481.1516507,
+                "stop": 1778068483.3403468,
+                "retries": 0,
+                "file_path": "test_final_state.py"
+            }
+        ]
+    }
+}

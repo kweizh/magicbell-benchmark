@@ -1,0 +1,32 @@
+- Initializing MCP connections...
+You
+# Preserving your work Save a copy of files you create during this task to `/logs/artifacts/`. This directory is preserved after the run so outputs can be inspected. Organize with subdirectories if helpful (e.g., `/logs/artifacts/code/`, `/logs/artifacts/reports/`). The directory already exists and is writable. *** # MagicBell Slack Integration ## Background MagicBell supports multi-channel notifications, including Slack. You need to write a script to send a broadcast specifically formatted for Slack using channel overrides. ## Requirements * Write a bash script `send_slack_broadcast.sh` that uses `curl` to call the MagicBell `POST /broadcasts` endpoint. * The broadcast should have a general title "System Alert" and content "General alert message". * It must include an override for the `slack` channel with the content "Slack-specific alert message". * The recipient should be `user@example.com`. * Use the API key and secret passed as environment variables `MAGICBELL_API_KEY` and `MAGICBELL_API_SECRET`. ## Implementation Guide 1. Create `/home/user/myproject/send_slack_broadcast.sh`. 2. Ensure the script is executable. 3. Use `curl` to send a POST request to `https://api.magicbell.com/v2/broadcasts`. 4. Set the `X-MAGICBELL-API-KEY` and `X-MAGICBELL-API-SECRET` headers. 5. The JSON payload must include: * `broadcast.title`: "System Alert" * `broadcast.content`: "General alert message" * `broadcast.recipients`: `[{"email": "user@example.com"}]` * `broadcast.overrides.slack.content`: "Slack-specific alert message" 6. Output the HTTP response body to stdout. ## Constraints * Project path: /home/user/myproject * Script path: /home/user/myproject/send\_slack\_broadcast.sh * The script must read `MAGICBELL_API_KEY` and `MAGICBELL_API_SECRET` from the environment.   
+
+Pochi
+💭 Thinking for 567 characters   
+📋 Updating todo list (4 items) ✔ 
+📂 Listing files in /home/user/myproject ✔ 
+💫 Executing mkdir -p /home/user/myproject && mkdir -p /logs/artifacts/code/ ✔ 
+📋 Updating todo list (4 items) ✔ 
+✏️  Writing /home/user/myproject/send_slack_broadcast.sh ✔ 
+💫 Executing chmod +x /home/user/myproject/send_slack_broadcast.sh && cp /home/user/myproject/send_slack_broadcast.sh /logs/artifacts/code/send_slack_broadcast.sh ✔ 
+📋 Updating todo list (4 items) ✔ 
+🎉 Task Completed
+I have created the MagicBell Slack broadcast script.
+
+### Changes:
+- Created `/home/user/myproject/send_slack_broadcast.sh` with the following features:
+    - Validates that `MAGICBELL_API_KEY` and `MAGICBELL_API_SECRET` are set in the environment.
+    - Sends a POST request to `https://api.magicbell.com/v2/broadcasts`.
+    - Includes the required JSON payload with "System Alert" title, general content, and a Slack-specific override.
+    - Targets `user@example.com` as the recipient.
+- Made the script executable.
+- Saved a copy of the script to `/logs/artifacts/code/send_slack_broadcast.sh`.
+
+### Usage:
+```bash
+export MAGICBELL_API_KEY="your_api_key"
+export MAGICBELL_API_SECRET="your_api_secret"
+/home/user/myproject/send_slack_broadcast.sh
+```   
+  

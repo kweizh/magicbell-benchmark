@@ -1,0 +1,32 @@
+{
+    "results": {
+        "tool": {
+            "name": "pytest",
+            "version": "8.4.1"
+        },
+        "summary": {
+            "tests": 1,
+            "passed": 0,
+            "failed": 1,
+            "skipped": 0,
+            "pending": 0,
+            "other": 0,
+            "start": 1778068392.5242443,
+            "stop": 1778068706.563819
+        },
+        "tests": [
+            {
+                "name": "test_final_state.py::test_react_native_inbox_mock",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 313.9630344451871,
+                "start": 1778068392.5763001,
+                "stop": 1778068706.5634668,
+                "retries": 0,
+                "file_path": "test_final_state.py",
+                "trace": "start_app = None\n\n    def test_react_native_inbox_mock(start_app):\n        reason = \"The application should display a mock MagicBell inbox fetching notifications and allowing users to mark them as read.\"\n        truth = \"Navigate to http://localhost:3000. Verify that the page loads and displays notifications. Click the 'Mark all as read' button. Verify that a POST request is made to `https://api.magicbell.com/notifications/read`.\"\n    \n        verifier = PochiVerifier()\n        result = verifier.verify(\n            reason=reason,\n            truth=truth,\n            use_browser_agent=True,\n            trajectory_dir=\"/logs/verifier/pochi/test_react_native_inbox_mock\"\n        )\n>       assert result.status == \"pass\", f\"Browser verification failed: {result.reason}\"\nE       AssertionError: Browser verification failed: The test failed because the application did not display notifications as required. While the page at http://localhost:3000 loaded and the 'Mark all as read' button was present and functional (triggering a POST request), the fetch request for notifications (GET https://api.magicbell.com/notifications) returned a 401 Unauthorized error. This resulted in the page displaying \"No notifications\" instead of the expected notification list, failing the second verification step.\nE       assert 'fail' == 'pass'\nE         \nE         - pass\nE         + fail\n\ntests/test_final_state.py:58: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+            }
+        ]
+    }
+}

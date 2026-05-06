@@ -1,0 +1,49 @@
+{
+    "id": "ec4b1f8f-9447-4b66-8653-692c44e5168f",
+    "started_at": "2026-05-06T19:48:46.690851",
+    "finished_at": "2026-05-06T20:02:20.952418",
+    "n_total_trials": 19,
+    "stats": {
+        "n_trials": 19,
+        "n_errors": 0,
+        "evals": {
+            "pochi__gemini-3-flash__tasks": {
+                "n_trials": 19,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.7368421052631579
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "1.0": [
+                            "multi_channel_fallback_delivery__EeTVbsE",
+                            "fetch_notifications_api__qmAsMea",
+                            "custom_email_template__VVDdJub",
+                            "delete_notification_api__kXk9Svi",
+                            "react_headless_migration__fdM6cKB",
+                            "mark_all_as_read_api__4MAJ8yu",
+                            "custom_theme_floating_inbox__Pi8pb7D",
+                            "paginated_inbox_api__RsYAZhC",
+                            "notification_badge_customization__vsy2PdP",
+                            "teams_channel_integration__nwxxbQ4",
+                            "update_user_preferences_api__qC26YAy",
+                            "user_creation_on_the_fly__iuy6hTL",
+                            "webhook_event_handling__qESuZJZ",
+                            "slack_channel_integration__eDpGARh"
+                        ],
+                        "0.0": [
+                            "jwt_auth_error_handling__kumUVrz",
+                            "react_native_inbox_mock__xoDeaEH",
+                            "transactional_stripe_notificatio__Yfs8D5J",
+                            "sms_twilio_integration__YWdXEfR",
+                            "broadcast_with_action_url__nKUvAb6"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}

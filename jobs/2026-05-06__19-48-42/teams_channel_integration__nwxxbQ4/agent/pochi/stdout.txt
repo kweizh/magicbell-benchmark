@@ -1,0 +1,57 @@
+- Initializing MCP connections...
+You
+# Preserving your work Save a copy of files you create during this task to `/logs/artifacts/`. This directory is preserved after the run so outputs can be inspected. Organize with subdirectories if helpful (e.g., `/logs/artifacts/code/`, `/logs/artifacts/reports/`). The directory already exists and is writable. --- # MagicBell Teams Integration Script ## Background You need to write a bash script to configure the Microsoft Teams channel integration for a user in MagicBell. This involves saving a Teams token (which contains the webhook URL) for the authenticated user via the MagicBell REST API. ## Requirements - Write a bash script `save_teams_token.sh` that uses `curl` to save a Teams token. - The script must accept two positional arguments: 1. `USER_JWT`: The User JWT for authentication. 2. `WEBHOOK_URL`: The Microsoft Teams webhook URL. - It must send a `PUT` request to `/channels/teams/tokens`. - The payload must be a JSON object containing the webhook URL as specified in the MagicBell documentation. - The script must use the base URL `https://api.magicbell.com/v2` by default, but MUST allow overriding it via the `MAGICBELL_API_URL` environment variable. ## Implementation Guide 1. Create the script at `/home/user/magicbell-task/save_teams_token.sh`. 2. Ensure it has execute permissions. 3. Construct the JSON payload: `{"webhook": {"url": "<WEBHOOK_URL>"}}`. 4. Use `curl` to send the PUT request with the `Authorization: Bearer <USER_JWT>` header and `Content-Type: application/json`. ## Constraints - Project path: `/home/user/magicbell-task` - The script must fail (exit non-zero) if the two arguments are not provided.   
+
+Pochi
+💭 Thinking for 300 characters   
+📋 Updating todo list (4 items) ✔ 
+💫 Executing mkdir -p /home/user/magicbell-task /logs/artifacts/code ✔ 
+💭 Thinking for 627 characters   
+✏️  Writing /home/user/magicbell-task/save_teams_token.sh ✔ 
+💫 Executing chmod +x /home/user/magicbell-task/save_teams_token.sh && cp /home/user/magicbell-task/save_teams_token.sh /logs/artifacts/code/save_teams_token.sh ✔ 
+💭 Thinking for 236 characters   
+📋 Updating todo list (4 items) ✔ 
+🎉 Task Completed
+I have created the `save_teams_token.sh` script at `/home/user/magicbell-task/save_teams_token.sh` and ensured it has execute permissions. I also saved a copy to `/logs/artifacts/code/save_teams_token.sh`.
+
+### Script Details:
+- **Usage**: `./save_teams_token.sh <USER_JWT> <WEBHOOK_URL>`
+- **Endpoint**: `PUT /channels/teams/tokens`
+- **Base URL**: `https://api.magicbell.com/v2` (can be overridden via `MAGICBELL_API_URL` environment variable)
+- **Payload**: `{"webhook": {"url": "<WEBHOOK_URL>"}}`
+- **Authentication**: Uses `Authorization: Bearer <USER_JWT>` header.
+
+### Script Content:
+```bash
+#!/bin/bash
+
+# Exit non-zero if arguments are missing
+if [ "$#" -ne 2 ]; then
+    echo "Usage: $0 <USER_JWT> <WEBHOOK_URL>"
+    exit 1
+fi
+
+USER_JWT=$1
+WEBHOOK_URL=$2
+
+# Use MAGICBELL_API_URL if set, otherwise use default
+API_URL=${MAGICBELL_API_URL:-"https://api.magicbell.com/v2"}
+
+# Construct JSON payload
+PAYLOAD=$(cat <<EOF
+{
+  "webhook": {
+    "url": "$WEBHOOK_URL"
+  }
+}
+EOF
+)
+
+# Send PUT request
+curl -X PUT \
+     -H "Authorization: Bearer $USER_JWT" \
+     -H "Content-Type: application/json" \
+     -d "$PAYLOAD" \
+     "$API_URL/channels/teams/tokens"
+```   
+  
