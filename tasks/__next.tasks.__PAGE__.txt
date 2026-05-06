@@ -1,9 +1,391 @@
 1:"$Sreact.fragment"
 2:I[42654,["/magicbell-benchmark/_next/static/chunks/babff0e7418ab052.js","/magicbell-benchmark/_next/static/chunks/3ecbb78a8ff87549.js","/magicbell-benchmark/_next/static/chunks/5a582eaea2c9706d.js","/magicbell-benchmark/_next/static/chunks/be08138953094657.js"],"TasksPageClient"]
-6:I[75049,["/magicbell-benchmark/_next/static/chunks/d2c13bb33c4fcd54.js","/magicbell-benchmark/_next/static/chunks/c21188132e0e0d48.js"],"OutletBoundary"]
-7:"$Sreact.suspense"
-0:{"buildId":"FfBGhaXuB-4RjyIXZAFaT","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen bg-background text-foreground font-sans selection:bg-primary/20","children":[["$","div",null,{"className":"fixed inset-0 -z-10 h-full w-full bg-background bg-[radial-gradient(#2a2a2a_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-20 dark:opacity-40"}],["$","$L2",null,{"tasksData":[{"taskName":"broadcast_with_action_url","instruction":"","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"broadcast_with_action_url__nKUvAb6","model":"gemini-3-flash","agent":"Pochi","passed":false,"reward":0,"error":false,"latency_sec":217.748,"latency_breakdown":{"env_setup":19.926,"agent_setup":65.406,"agent_exec":104.993,"verifier":13},"taskName":"broadcast_with_action_url","jobId":"nKUvAb6","exec_duration":104.993}]},{"taskName":"custom_email_template","instruction":"","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"custom_email_template__VVDdJub","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":237.228,"latency_breakdown":{"env_setup":22.927,"agent_setup":33.173,"agent_exec":149.121,"verifier":15.049},"taskName":"custom_email_template","jobId":"VVDdJub","exec_duration":149.121}]},{"taskName":"custom_theme_floating_inbox","instruction":"","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"custom_theme_floating_inbox__Pi8pb7D","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":299.582,"latency_breakdown":{"env_setup":4.881,"agent_setup":43.742,"agent_exec":222.962,"verifier":12.258},"taskName":"custom_theme_floating_inbox","jobId":"Pi8pb7D","exec_duration":222.962}]},{"taskName":"delete_notification_api","instruction":"","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"delete_notification_api__kXk9Svi","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":134.173,"latency_breakdown":{"env_setup":14.51,"agent_setup":47.545,"agent_exec":43.302,"verifier":12.756},"taskName":"delete_notification_api","jobId":"kXk9Svi","exec_duration":43.302}]},{"taskName":"fetch_notifications_api","instruction":"","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"fetch_notifications_api__qmAsMea","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":128.23,"latency_breakdown":{"env_setup":23.199,"agent_setup":33.8,"agent_exec":32.161,"verifier":13.633},"taskName":"fetch_notifications_api","jobId":"qmAsMea","exec_duration":32.161}]},{"taskName":"jwt_auth_error_handling","instruction":"","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"jwt_auth_error_handling__kumUVrz","model":"gemini-3-flash","agent":"Pochi","passed":false,"reward":0,"error":false,"latency_sec":197.701,"latency_breakdown":{"env_setup":23.263,"agent_setup":34.872,"agent_exec":110.61,"verifier":12.809},"taskName":"jwt_auth_error_handling","jobId":"kumUVrz","exec_duration":110.61}]},{"taskName":"mark_all_as_read_api","instruction":"","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"mark_all_as_read_api__4MAJ8yu","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":98.989,"latency_breakdown":{"env_setup":3.926,"agent_setup":27.174,"agent_exec":26.904,"verifier":17.694},"taskName":"mark_all_as_read_api","jobId":"4MAJ8yu","exec_duration":26.904}]},{"taskName":"multi_channel_fallback_delivery","instruction":"","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"multi_channel_fallback_delivery__EeTVbsE","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":128.855,"latency_breakdown":{"env_setup":22.922,"agent_setup":35.883,"agent_exec":40.883,"verifier":12.18},"taskName":"multi_channel_fallback_delivery","jobId":"EeTVbsE","exec_duration":40.883}]},{"taskName":"notification_badge_customization","instruction":"","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"notification_badge_customization__vsy2PdP","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":268.199,"latency_breakdown":{"env_setup":15.935,"agent_setup":60.876,"agent_exec":41.279,"verifier":121.566},"taskName":"notification_badge_customization","jobId":"vsy2PdP","exec_duration":41.279}]},{"taskName":"paginated_inbox_api","instruction":"","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"paginated_inbox_api__RsYAZhC","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":159.443,"latency_breakdown":{"env_setup":18.753,"agent_setup":32.522,"agent_exec":77.556,"verifier":14.461},"taskName":"paginated_inbox_api","jobId":"RsYAZhC","exec_duration":77.556}]},{"taskName":"react_headless_migration","instruction":"","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"react_headless_migration__fdM6cKB","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":251.935,"latency_breakdown":{"env_setup":13.862,"agent_setup":41.304,"agent_exec":152.1,"verifier":17.66},"taskName":"react_headless_migration","jobId":"fdM6cKB","exec_duration":152.1}]},{"taskName":"react_native_inbox_mock","instruction":"","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"react_native_inbox_mock__xoDeaEH","model":"gemini-3-flash","agent":"Pochi","passed":false,"reward":0,"error":false,"latency_sec":593.522,"latency_breakdown":{"env_setup":22.986,"agent_setup":28.114,"agent_exec":199.271,"verifier":326.648},"taskName":"react_native_inbox_mock","jobId":"xoDeaEH","exec_duration":199.271}]},{"taskName":"slack_channel_integration","instruction":"","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"slack_channel_integration__eDpGARh","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":129.582,"latency_breakdown":{"env_setup":11.853,"agent_setup":38.974,"agent_exec":42.044,"verifier":12.638},"taskName":"slack_channel_integration","jobId":"eDpGARh","exec_duration":42.044}]},{"taskName":"sms_twilio_integration","instruction":"","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"sms_twilio_integration__YWdXEfR","model":"gemini-3-flash","agent":"Pochi","passed":false,"reward":0,"error":false,"latency_sec":151.038,"latency_breakdown":{"env_setup":11.549,"agent_setup":57.774,"agent_exec":51.526,"verifier":15.063},"taskName":"sms_twilio_integration","jobId":"YWdXEfR","exec_duration":51.526}]},{"taskName":"teams_channel_integration","instruction":"","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"teams_channel_integration__nwxxbQ4","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":126.977,"latency_breakdown":{"env_setup":13.66,"agent_setup":45.272,"agent_exec":36.857,"verifier":13.494},"taskName":"teams_channel_integration","jobId":"nwxxbQ4","exec_duration":36.857}]},{"taskName":"transactional_stripe_notification","instruction":"","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"transactional_stripe_notificatio__Yfs8D5J","model":"gemini-3-flash","agent":"Pochi","passed":false,"reward":0,"error":false,"latency_sec":156.312,"latency_breakdown":{"env_setup":13.939,"agent_setup":35.435,"agent_exec":69.596,"verifier":18.519},"taskName":"transactional_stripe_notificatio","jobId":"Yfs8D5J","exec_duration":69.596}]},{"taskName":"update_user_preferences_api","instruction":"","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"update_user_preferences_api__qC26YAy","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":116.054,"latency_breakdown":{"env_setup":3.715,"agent_setup":36.323,"agent_exec":45.846,"verifier":14.431},"taskName":"update_user_preferences_api","jobId":"qC26YAy","exec_duration":45.846}]},{"taskName":"user_creation_on_the_fly","instruction":"","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"user_creation_on_the_fly__iuy6hTL","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":158.197,"latency_breakdown":{"env_setup":3.901,"agent_setup":60.371,"agent_exec":62.082,"verifier":13.597},"taskName":"user_creation_on_the_fly","jobId":"iuy6hTL","exec_duration":62.082}]},{"taskName":"webhook_event_handling","instruction":"","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"webhook_event_handling__qESuZJZ","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":198.066,"latency_breakdown":{"env_setup":9.286,"agent_setup":52.016,"agent_exec":98.276,"verifier":15.049},"taskName":"webhook_event_handling","jobId":"qESuZJZ","exec_duration":98.276}]}]}]]}],["$L3","$L4"],"$L5"]}],"loading":null,"isPartial":false}
-3:["$","script","script-0",{"src":"/magicbell-benchmark/_next/static/chunks/5a582eaea2c9706d.js","async":true}]
-4:["$","script","script-1",{"src":"/magicbell-benchmark/_next/static/chunks/be08138953094657.js","async":true}]
-5:["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]
-8:null
+15:I[75049,["/magicbell-benchmark/_next/static/chunks/d2c13bb33c4fcd54.js","/magicbell-benchmark/_next/static/chunks/c21188132e0e0d48.js"],"OutletBoundary"]
+16:"$Sreact.suspense"
+3:T5e9,# Send a Broadcast with an Action URL
+
+## Background
+MagicBell allows you to send broadcasts to users. These broadcasts can include an `action_url` which directs the user to a specific page when they click the notification.
+
+## Requirements
+- Write a shell script `send_broadcast.sh` that sends a broadcast using the MagicBell API.
+- The broadcast must have the following properties:
+  - `title`: "Welcome!"
+  - `content`: "Click here to get started."
+  - `action_url`: "https://example.com/start"
+  - `recipients`: A single recipient with the email `test@example.com`
+- The script must use the `MAGICBELL_API_KEY` and `MAGICBELL_API_SECRET` environment variables for authentication.
+- The script must save the raw API JSON response to `/home/user/output.json`.
+
+## Implementation Guide
+1. Create a file `/home/user/send_broadcast.sh`.
+2. Write a `curl` command that sends a `POST` request to `https://api.magicbell.com/v2/broadcasts`.
+3. Include the headers `X-MAGICBELL-API-KEY` and `X-MAGICBELL-API-SECRET` using the respective environment variables.
+4. Set the `Content-Type: application/json` header.
+5. Pass the JSON payload with the `broadcast` object containing the required fields.
+6. Redirect the output of the `curl` command to `/home/user/output.json`.
+7. Make the script executable (`chmod +x send_broadcast.sh`).
+8. Run the script.
+
+## Constraints
+- Project path: /home/user
+- Log file: /home/user/output.json
+- You must use the `MAGICBELL_API_KEY` and `MAGICBELL_API_SECRET` environment variables.
+4:T50c,# MagicBell Custom Email Template Broadcast
+
+## Background
+MagicBell allows sending cross-channel notifications. You need to write a Node.js script that sends a broadcast notification with a custom HTML template specifically for the email channel using the MagicBell REST API.
+
+## Requirements
+- Initialize a Node.js project in `/home/user/magicbell-project`.
+- Install `axios`.
+- Create a script `/home/user/magicbell-project/send_broadcast.js`.
+- The script must make a POST request to `https://api.magicbell.com/v2/broadcasts` using `axios`.
+- It must use the headers `X-MAGICBELL-API-KEY: dummy_key` and `X-MAGICBELL-API-SECRET: dummy_secret`.
+- The broadcast payload must include:
+  - `title`: "Welcome to our platform"
+  - `recipients`: An array with one recipient `{"email": "newuser@example.com"}`
+  - `overrides`: A channel override for `email` containing `html`: "<h1>Welcome!</h1><p>Thanks for joining.</p>" and `title`: "Welcome Email".
+
+## Implementation Guide
+1. `cd /home/user/magicbell-project`
+2. `npm init -y`
+3. `npm install axios`
+4. Write `send_broadcast.js` to send the request and `console.log` the response.
+
+## Constraints
+- Project path: `/home/user/magicbell-project`
+- The script must be executable via `node send_broadcast.js`.
+- Use `axios` for the HTTP request.5:T4e6,# Custom Theme for MagicBell Floating Inbox
+
+## Background
+MagicBell's React SDK allows customization of its UI components using CSS variables. In this task, you will integrate the `FloatingInbox` into a React application and apply a custom dark theme.
+
+## Requirements
+- Create a React application.
+- Install `@magicbell/react`.
+- Render the `FloatingInbox` component wrapped in a MagicBell `Provider` using a dummy token.
+- Create a custom stylesheet `src/theme.css` that sets MagicBell's CSS variables on the `body` selector to create a dark theme.
+  - Set `--magicbell-bg-default` to `#111827`.
+  - Set `--magicbell-text-default` to `#f5f5f5`.
+- Import the custom stylesheet in your main application file.
+
+## Implementation Guide
+1. Initialize a new React project in `/home/user/myproject` (e.g., using `npm create vite@latest . -- --template react-ts`).
+2. Install `@magicbell/react`.
+3. Create `src/theme.css` with the required CSS variables.
+4. Update `src/App.tsx` (or `src/App.jsx`) to import `@magicbell/react/styles/floating-inbox.css`, `src/theme.css`, and render the `FloatingInbox` within a `Provider` (use `token="dummy_token"`).
+
+## Constraints
+- Project path: `/home/user/myproject`
+- Start command: `npm run dev -- --host`
+- Port: 51736:T5d3,# MagicBell JWT Authentication Fix
+
+## Background
+We have a React application using the `@magicbell/react` SDK and an Express backend that provides a User JWT for authentication. However, the integration is currently failing with authentication errors, and the frontend does not handle token fetch errors gracefully.
+
+## Requirements
+1.  **Fix JWT Generation**: The Express backend (`server.js`) currently generates an invalid JWT. It must be fixed to use the correct algorithm (`HS256`) and include the required payload fields (`user_email` and `api_key`) according to MagicBell's documentation.
+2.  **Frontend Error Handling**: The React frontend (`src/App.jsx`) fetches the token from `/api/token`. If the token fetch fails (e.g., backend returns 400 or 500), the app should display a visible error message `"Authentication failed"` in a `div` with `id="error-message"`.
+
+## Implementation Guide
+1.  Update `server.js`: Fix the `jwt.sign` call. Ensure it uses the `MAGICBELL_API_SECRET` to sign an `HS256` token containing `user_email` and `api_key` (using `MAGICBELL_API_KEY`).
+2.  Update `src/App.jsx`: Ensure that if the token fetch fails, the UI displays `<div id="error-message">Authentication failed</div>`. Do not render the MagicBellProvider if there is an error or no token.
+
+## Constraints
+- Project path: `/home/user/magicbell-app`
+- Start command: `npm run dev` (starts both frontend and backend concurrently)
+- Frontend Port: 3000
+- Backend Port: 3001
+
+## Integrations
+- None7:T551,# MagicBell Multi-Channel Broadcast Payload
+
+## Background
+You need to construct a MagicBell broadcast payload for a multi-channel delivery system. The broadcast should alert an admin and provide a default action URL, but use a specific action URL when delivered via Slack.
+
+## Requirements
+1. Initialize a Node.js project in `/home/user/magicbell-project`.
+2. Write a Node.js script `build_payload.js` that generates a valid JSON payload for the MagicBell Create Broadcast API (`POST /broadcasts`).
+3. The generated JSON must have a top-level `broadcast` object containing:
+   - `title`: 'Alert'
+   - `content`: 'System down'
+   - `action_url`: 'https://example.com/alert'
+   - `recipients`: An array with one object `{"email": "admin@example.com"}`
+   - `overrides`: An object configuring the `slack` channel to use `action_url`: 'https://example.com/slack-alert' (nested under `channels.slack`).
+4. Run the script and write the JSON output to `payload.json`.
+
+## Implementation Guide
+1. `mkdir -p /home/user/magicbell-project` and `cd` into it.
+2. `npm init -y`
+3. Create `build_payload.js` that constructs the JavaScript object and uses `fs.writeFileSync('payload.json', JSON.stringify(payload, null, 2))`.
+4. Run `node build_payload.js`.
+
+## Constraints
+- Project path: `/home/user/magicbell-project`
+- Log file: `/home/user/magicbell-project/payload.json`8:T475,# MagicBell Notification Badge Customization
+
+## Background
+You have a React application using MagicBell's `FloatingInbox`. By default, the trigger button is a bell icon. You need to customize this trigger button (often referred to as the notification badge) by providing a custom `ButtonComponent`.
+
+## Requirements
+- Create a custom button component to replace the default MagicBell trigger.
+- The custom button must be a `<button>` element with the ID `custom-bell-btn`.
+- The button text must be `My Alerts`.
+- The button must correctly receive and use the `onClick` and `ref` props so that clicking it toggles the inbox.
+- Apply this custom component to the `FloatingInbox` in `src/App.jsx`.
+
+## Implementation Guide
+1. Open `/home/user/app/src/App.jsx`.
+2. Define a new component (e.g., `CustomButton`) using `React.forwardRef` to handle the `ref` and `onClick` props.
+3. Return `<button id="custom-bell-btn" onClick={onClick} ref={ref}>My Alerts</button>`.
+4. Pass your new component to the `ButtonComponent` prop of the `<FloatingInbox />`.
+
+## Constraints
+- Project path: `/home/user/app`
+- Start command: `npm start`
+- Port: `3000`9:T7e5,# Fetch Notifications with Pagination
+
+## Background
+MagicBell provides a REST API to fetch a user's notifications. You need to write a script that fetches all notifications for a given user using the `GET /notifications` endpoint, handling pagination to ensure all records are retrieved.
+
+## Requirements
+- Write a Node.js script `fetch_notifications.js` in `/home/user/magicbell-task`.
+- The script must generate a User JWT for `test_user@example.com` using the `jsonwebtoken` package with the `HS256` algorithm. The JWT payload must include `user_email` and `api_key`.
+- Use the generated JWT to authenticate with the MagicBell API.
+- Fetch all notifications for the user by making requests to `<MAGICBELL_API_URL>/notifications`.
+- Implement pagination using the `limit` (e.g., set to 2) and `starting_after` query parameters until no more notifications are returned.
+- Extract the `title` of each notification and save the full list of titles as a JSON array to `/home/user/magicbell-task/output.json`.
+
+## Implementation Guide
+1. Initialize a Node.js project and install `jsonwebtoken` and `axios` (or use built-in `fetch`).
+2. Read `MAGICBELL_API_KEY`, `MAGICBELL_API_SECRET`, and `MAGICBELL_API_URL` from environment variables. If `MAGICBELL_API_URL` is not set, default to `https://api.magicbell.com/v2`.
+3. Generate the User JWT using the secret.
+4. Make a `GET` request to `${MAGICBELL_API_URL}/notifications?limit=2` with the `Authorization: Bearer <JWT>` header or `X-MAGICBELL-USER-JWT: <JWT>`.
+5. The response contains a `notifications` array. If it's not empty, get the `id` of the last notification and use it as `starting_after` in the next request.
+6. Keep fetching until the `notifications` array is empty.
+7. Write the collected titles to `output.json`.
+
+## Constraints
+- Project path: `/home/user/magicbell-task`
+- Log file: `/home/user/magicbell-task/output.json`
+- Run command: `node fetch_notifications.js`
+- Environment variables: `MAGICBELL_API_KEY`, `MAGICBELL_API_SECRET`, `MAGICBELL_API_URL`a:T667,# Migrate MagicBell React Headless and Implement JWT Auth
+
+## Background
+Your company is updating its notification system. The frontend React app currently uses the deprecated `@magicbell/react-headless` package with an insecure client-side API key. You need to migrate it to the new unified `@magicbell/react` package and implement a secure backend to generate User JWTs.
+
+## Requirements
+1. **Backend Setup**:
+   - In `/home/user/magicbell-backend`, initialize a Node.js project and install `express`, `cors`, and `jsonwebtoken`.
+   - Create `server.js` that runs an Express server on port 3001.
+   - Implement a `GET /auth` endpoint that generates and returns a MagicBell User JWT. The payload must contain `user_email: 'test@example.com'`. Sign it using the secret `'SUPER_SECRET_KEY'` and the `HS256` algorithm. Return it as `{ "token": "<jwt_token>" }`.
+2. **Frontend Migration**:
+   - In `/home/user/magicbell-migration`, uninstall `@magicbell/react-headless` and install `@magicbell/react`.
+   - Update `src/App.jsx` to fetch the token from `http://localhost:3001/auth` on mount.
+   - Once the token is fetched, render the MagicBell `<Provider>` (from `@magicbell/react/context-provider`) passing the token, and inside it render the `<Inbox />` component (from `@magicbell/react/inbox`). Make sure to import the CSS for the inbox (`@magicbell/react/styles/inbox.css`).
+
+## Constraints
+- Backend project path: `/home/user/magicbell-backend`
+- Frontend project path: `/home/user/magicbell-migration`
+- Backend port: 3001
+- Frontend start command: `npm run build`
+- Note: Do not change the existing React root setup in `src/main.jsx`.b:T48d,# React Native Inbox Mock
+
+## Background
+You need to build a mock MagicBell inbox for a React Native application that runs on Expo Web. Since the official React SDK is optimized for web, you will use the MagicBell REST API directly to fetch and display notifications in a React Native `FlatList`.
+
+## Requirements
+- Initialize a React Native app using Expo in `/home/user/myproject` (already done).
+- Implement a component that fetches notifications from the MagicBell API `GET https://api.magicbell.com/notifications`.
+- Use the provided `X-MAGICBELL-API-KEY` and `X-MAGICBELL-USER-EMAIL` headers to authenticate.
+- Render the notifications in a `FlatList`.
+- Each notification should display its `title` and `content`.
+- Add a "Mark all as read" button that calls `POST https://api.magicbell.com/notifications/read`.
+
+## Implementation Guide
+1. Modify `App.js` in `/home/user/myproject` to include the inbox component.
+2. Use `fetch` to call the MagicBell REST API.
+3. Ensure the app runs correctly on Expo Web.
+
+## Constraints
+- Project path: `/home/user/myproject`
+- Start command: `npx expo start --web --port 3000`
+- Port: 3000
+- Use `FlatList` for rendering.c:T5ca,# MagicBell Slack Integration
+
+## Background
+MagicBell supports multi-channel notifications, including Slack. You need to write a script to send a broadcast specifically formatted for Slack using channel overrides.
+
+## Requirements
+- Write a bash script `send_slack_broadcast.sh` that uses `curl` to call the MagicBell `POST /broadcasts` endpoint.
+- The broadcast should have a general title "System Alert" and content "General alert message".
+- It must include an override for the `slack` channel with the content "Slack-specific alert message".
+- The recipient should be `user@example.com`.
+- Use the API key and secret passed as environment variables `MAGICBELL_API_KEY` and `MAGICBELL_API_SECRET`.
+
+## Implementation Guide
+1. Create `/home/user/myproject/send_slack_broadcast.sh`.
+2. Ensure the script is executable.
+3. Use `curl` to send a POST request to `https://api.magicbell.com/v2/broadcasts`.
+4. Set the `X-MAGICBELL-API-KEY` and `X-MAGICBELL-API-SECRET` headers.
+5. The JSON payload must include:
+   - `broadcast.title`: "System Alert"
+   - `broadcast.content`: "General alert message"
+   - `broadcast.recipients`: `[{"email": "user@example.com"}]`
+   - `broadcast.overrides.slack.content`: "Slack-specific alert message"
+6. Output the HTTP response body to stdout.
+
+## Constraints
+- Project path: /home/user/myproject
+- Script path: /home/user/myproject/send_slack_broadcast.sh
+- The script must read `MAGICBELL_API_KEY` and `MAGICBELL_API_SECRET` from the environment.d:T594,# Configure Twilio SMS Integration for MagicBell
+
+## Background
+MagicBell supports sending SMS notifications via Twilio. You need to write a script to programmatically configure the Twilio integration for a MagicBell project using the MagicBell API.
+
+## Requirements
+- Write a bash script `setup_twilio.sh` that makes a `PUT` request to the MagicBell Twilio integration endpoint (`/v2/integrations/twilio`).
+- The script must use the base URL from the `MAGICBELL_API_URL` environment variable. If `MAGICBELL_API_URL` is not set, it should default to `https://api.magicbell.com`.
+- The script must authenticate using the `X-MAGICBELL-API-KEY` and `X-MAGICBELL-API-SECRET` headers, reading from the `MAGICBELL_API_KEY` and `MAGICBELL_API_SECRET` environment variables.
+- The request body must be a JSON object containing the Twilio credentials:
+  - `account_sid`: Read from `TWILIO_ACCOUNT_SID`
+  - `api_key`: Read from `TWILIO_API_KEY`
+  - `api_secret`: Read from `TWILIO_API_SECRET`
+  - `from`: Read from `TWILIO_FROM_NUMBER`
+
+## Implementation Guide
+1. Create `setup_twilio.sh` in the project directory.
+2. Use `curl` to send the `PUT` request. Ensure you send the `Content-Type: application/json` header.
+3. Make the script executable.
+
+## Constraints
+- Project path: `/home/user/project`
+- The script must handle the `MAGICBELL_API_URL` environment variable correctly without a trailing slash (e.g., `http://localhost:8080`).e:T539,# MagicBell Teams Integration Script
+
+## Background
+You need to write a bash script to configure the Microsoft Teams channel integration for a user in MagicBell. This involves saving a Teams token (which contains the webhook URL) for the authenticated user via the MagicBell REST API.
+
+## Requirements
+- Write a bash script `save_teams_token.sh` that uses `curl` to save a Teams token.
+- The script must accept two positional arguments:
+  1. `USER_JWT`: The User JWT for authentication.
+  2. `WEBHOOK_URL`: The Microsoft Teams webhook URL.
+- It must send a `PUT` request to `/channels/teams/tokens`.
+- The payload must be a JSON object containing the webhook URL as specified in the MagicBell documentation.
+- The script must use the base URL `https://api.magicbell.com/v2` by default, but MUST allow overriding it via the `MAGICBELL_API_URL` environment variable.
+
+## Implementation Guide
+1. Create the script at `/home/user/magicbell-task/save_teams_token.sh`.
+2. Ensure it has execute permissions.
+3. Construct the JSON payload: `{"webhook": {"url": "<WEBHOOK_URL>"}}`.
+4. Use `curl` to send the PUT request with the `Authorization: Bearer <USER_JWT>` header and `Content-Type: application/json`.
+
+## Constraints
+- Project path: `/home/user/magicbell-task`
+- The script must fail (exit non-zero) if the two arguments are not provided.f:T7c3,# MagicBell Transactional Notification via Stripe Webhook
+
+## Background
+MagicBell is a notification-as-a-service platform. In this task, you will integrate MagicBell with a Stripe webhook to send a transactional notification when a user's payment succeeds.
+
+## Requirements
+- Create an Express.js server that listens on port 3000.
+- Implement a `POST /webhook/stripe` endpoint.
+- When the endpoint receives a Stripe webhook event with `type: "invoice.payment_succeeded"`, it must send a MagicBell Broadcast.
+- The MagicBell Broadcast payload must be:
+  ```json
+  {
+    "broadcast": {
+      "title": "Payment Successful",
+      "content": "Your payment for subscription <subscription_id> was successful.",
+      "recipients": [{ "email": "<customer_email>" }]
+    }
+  }
+  ```
+- The `<subscription_id>` and `<customer_email>` must be extracted from the Stripe event payload (`req.body.data.object.subscription` and `req.body.data.object.customer_email`).
+- The MagicBell API request must be sent to the URL specified by the `MAGICBELL_API_URL` environment variable (default to `https://api.magicbell.com` if not set).
+- The MagicBell API request must include the `X-MAGICBELL-API-KEY` and `X-MAGICBELL-API-SECRET` headers, sourced from the `MAGICBELL_API_KEY` and `MAGICBELL_API_SECRET` environment variables.
+- Return a 200 OK response to the Stripe webhook after processing.
+
+## Implementation Guide
+1. Initialize a Node.js project in `/home/user/magicbell-stripe`.
+2. Install `express` (and any HTTP client like `axios` if you prefer, or use built-in `fetch`).
+3. Create `index.js` and implement the Express server with the `/webhook/stripe` endpoint. Make sure to use `express.json()` middleware to parse the request body.
+4. Ensure the server listens on port 3000.
+
+## Constraints
+- Project path: `/home/user/magicbell-stripe`
+- Start command: `node index.js`
+- Port: 3000
+- You must use the `MAGICBELL_API_URL`, `MAGICBELL_API_KEY`, and `MAGICBELL_API_SECRET` environment variables.10:T82b,# Update User Preferences via MagicBell API
+
+## Background
+You need to programmatically update a user's notification preferences for MagicBell from your Node.js backend. To do this, you must generate a User JWT and make a request to the MagicBell REST API.
+
+## Requirements
+Write a Node.js script `update_preferences.js` that performs the following:
+1. Generates a User JWT for the user `user@example.com` using the `jsonwebtoken` package. The JWT payload must include `user_email` and `api_key`. It must be signed using the `HS256` algorithm.
+2. Sends a `PUT` request to the MagicBell API endpoint `/channels/user_preferences` to update the user's channel preferences. Specifically, disable the `email` channel for the `updates` category.
+3. The script must read the following environment variables:
+   - `MAGICBELL_API_KEY`: The MagicBell API key.
+   - `MAGICBELL_API_SECRET`: The MagicBell API secret (used to sign the JWT).
+   - `MAGICBELL_API_URL`: The base URL for the MagicBell API (e.g., `https://api.magicbell.com/v2`).
+4. The script should use the built-in `fetch` API (available in Node.js 18+) to make the request.
+5. Print the HTTP status code of the response to the console.
+
+## Implementation Guide
+1. Initialize a Node.js project in `/home/user/project` and install `jsonwebtoken`.
+2. Create `update_preferences.js`.
+3. Use `jwt.sign` to create the token. The payload should be `{ user_email: 'user@example.com', api_key: process.env.MAGICBELL_API_KEY }`.
+4. Construct the request body as JSON:
+   ```json
+   {
+     "categories": [
+       {
+         "key": "updates",
+         "channels": [
+           { "name": "email", "enabled": false }
+         ]
+       }
+     ]
+   }
+   ```
+5. Send the `PUT` request to `${process.env.MAGICBELL_API_URL}/channels/user_preferences`. Remember to include the `Authorization: Bearer <token>` and `Content-Type: application/json` headers.
+
+## Constraints
+- Project path: `/home/user/project`
+- Use Node.js 18+ built-in `fetch`.
+- Do not hardcode the API credentials or base URL; strictly use the environment variables.
+
+## Integrations
+- None11:T577,# MagicBell User Creation On-The-Fly
+
+## Background
+MagicBell can create users on-the-fly when a notification is sent to them via a broadcast. You need to use the MagicBell REST API to trigger this behavior.
+
+## Requirements
+- Write a shell script `run.sh` that uses `curl` to send a `POST` request to the MagicBell Broadcasts API (`https://api.magicbell.com/v2/broadcasts`).
+- Include the authentication headers:
+  - `X-MAGICBELL-API-KEY`: `dummy_key`
+  - `X-MAGICBELL-API-SECRET`: `dummy_secret`
+  - `Content-Type`: `application/json`
+- The JSON payload must create a broadcast with:
+  - `title`: `Welcome`
+  - `content`: `Hello new user`
+  - `recipients`: A list containing one user with the email `new_user_on_the_fly@example.com`.
+- Execute the script and save the raw HTTP response body to a log file. Since the credentials are fake, expect an error response, but you must capture it.
+
+## Implementation Guide
+1. Create `/home/user/project/run.sh` with the `curl` command.
+2. Make the script executable (`chmod +x run.sh`).
+3. Run the script and redirect the standard output to `/home/user/project/output.log` (e.g., `./run.sh > output.log`).
+
+## Constraints
+- Project path: `/home/user/project`
+- Script file: `/home/user/project/run.sh`
+- Log file: `/home/user/project/output.log`
+- You must construct the correct JSON structure for the broadcast as described in the MagicBell documentation.0:{"buildId":"kBMiPanEY3GS7GSJjyeVV","rsc":["$","$1","c",{"children":[["$","div",null,{"className":"min-h-screen bg-background text-foreground font-sans selection:bg-primary/20","children":[["$","div",null,{"className":"fixed inset-0 -z-10 h-full w-full bg-background bg-[radial-gradient(#2a2a2a_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-20 dark:opacity-40"}],["$","$L2",null,{"tasksData":[{"taskName":"broadcast_with_action_url","instruction":"$3","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"broadcast_with_action_url__nKUvAb6","model":"gemini-3-flash","agent":"Pochi","passed":false,"reward":0,"error":false,"latency_sec":217.748,"latency_breakdown":{"env_setup":19.926,"agent_setup":65.406,"agent_exec":104.993,"verifier":13},"taskName":"broadcast_with_action_url","jobId":"nKUvAb6","exec_duration":104.993}]},{"taskName":"custom_email_template","instruction":"$4","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"custom_email_template__VVDdJub","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":237.228,"latency_breakdown":{"env_setup":22.927,"agent_setup":33.173,"agent_exec":149.121,"verifier":15.049},"taskName":"custom_email_template","jobId":"VVDdJub","exec_duration":149.121}]},{"taskName":"custom_theme_floating_inbox","instruction":"$5","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"custom_theme_floating_inbox__Pi8pb7D","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":299.582,"latency_breakdown":{"env_setup":4.881,"agent_setup":43.742,"agent_exec":222.962,"verifier":12.258},"taskName":"custom_theme_floating_inbox","jobId":"Pi8pb7D","exec_duration":222.962}]},{"taskName":"delete_notification_api","instruction":"# Delete Notification via MagicBell API\n\n## Background\nYou need to delete a specific notification using the MagicBell REST API.\n\n## Requirements\n- Use `curl` to send a DELETE request to the MagicBell API to delete a notification with ID `notif_123`.\n- The API Key is `dummy_api_key` and API Secret is `dummy_api_secret`.\n- Extract the HTTP status code from the response and save it to `/home/user/output.txt`.\n\n## Implementation Guide\n1. Send a DELETE request to `https://api.magicbell.com/notifications/notif_123` using `curl`.\n2. Include the headers `X-MAGICBELL-API-KEY: dummy_api_key` and `X-MAGICBELL-API-SECRET: dummy_api_secret`.\n3. Extract the HTTP status code (e.g., using `-w \"%{http_code}\"`) and write it to `/home/user/output.txt`.\n\n## Constraints\n- Project path: /home/user\n- Log file: /home/user/output.txt\n- You must use `curl`.","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"delete_notification_api__kXk9Svi","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":134.173,"latency_breakdown":{"env_setup":14.51,"agent_setup":47.545,"agent_exec":43.302,"verifier":12.756},"taskName":"delete_notification_api","jobId":"kXk9Svi","exec_duration":43.302}]},{"taskName":"fetch_notifications_api","instruction":"# Fetch Notifications using MagicBell API\n\n## Background\nYou need to write a shell script that fetches the list of notifications for a specific user via the MagicBell REST API.\n\n## Requirements\n- Create a shell script named `fetch_notifications.sh` in the project directory.\n- The script must contain a single `curl` command to fetch all notifications for a user.\n- The endpoint to use is `https://api.magicbell.com/v2/notifications`.\n- You must authenticate using the provided User JWT: `dummy_user_jwt_token`.\n- Pass the JWT in the `Authorization` header as a Bearer token.\n- The script should output the JSON response to standard output.\n\n## Constraints\n- Project path: `/home/user/project`\n- Script file: `/home/user/project/fetch_notifications.sh`\n- The script must be executable.\n\n## Integrations\n- None","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"fetch_notifications_api__qmAsMea","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":128.23,"latency_breakdown":{"env_setup":23.199,"agent_setup":33.8,"agent_exec":32.161,"verifier":13.633},"taskName":"fetch_notifications_api","jobId":"qmAsMea","exec_duration":32.161}]},{"taskName":"jwt_auth_error_handling","instruction":"$6","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"jwt_auth_error_handling__kumUVrz","model":"gemini-3-flash","agent":"Pochi","passed":false,"reward":0,"error":false,"latency_sec":197.701,"latency_breakdown":{"env_setup":23.263,"agent_setup":34.872,"agent_exec":110.61,"verifier":12.809},"taskName":"jwt_auth_error_handling","jobId":"kumUVrz","exec_duration":110.61}]},{"taskName":"mark_all_as_read_api","instruction":"# Mark All Notifications as Read API\n\n## Background\nMagicBell provides a REST API to manage notifications. You need to write a simple shell script to mark all notifications as read for a specific user using the MagicBell API.\n\n## Requirements\n- Create a shell script at `/home/user/mark_read.sh`.\n- The script must make a `POST` request to `https://api.magicbell.com/notifications/read`.\n- It must include the `X-MAGICBELL-API-KEY` header, reading its value from the `MAGICBELL_API_KEY` environment variable.\n- It must include the `X-MAGICBELL-USER-EMAIL` header, reading its value from the `MAGICBELL_USER_EMAIL` environment variable.\n- The script must output the raw response from the API to stdout.\n\n## Constraints\n- Project path: `/home/user`","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"mark_all_as_read_api__4MAJ8yu","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":98.989,"latency_breakdown":{"env_setup":3.926,"agent_setup":27.174,"agent_exec":26.904,"verifier":17.694},"taskName":"mark_all_as_read_api","jobId":"4MAJ8yu","exec_duration":26.904}]},{"taskName":"multi_channel_fallback_delivery","instruction":"$7","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"multi_channel_fallback_delivery__EeTVbsE","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":128.855,"latency_breakdown":{"env_setup":22.922,"agent_setup":35.883,"agent_exec":40.883,"verifier":12.18},"taskName":"multi_channel_fallback_delivery","jobId":"EeTVbsE","exec_duration":40.883}]},{"taskName":"notification_badge_customization","instruction":"$8","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"notification_badge_customization__vsy2PdP","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":268.199,"latency_breakdown":{"env_setup":15.935,"agent_setup":60.876,"agent_exec":41.279,"verifier":121.566},"taskName":"notification_badge_customization","jobId":"vsy2PdP","exec_duration":41.279}]},{"taskName":"paginated_inbox_api","instruction":"$9","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"paginated_inbox_api__RsYAZhC","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":159.443,"latency_breakdown":{"env_setup":18.753,"agent_setup":32.522,"agent_exec":77.556,"verifier":14.461},"taskName":"paginated_inbox_api","jobId":"RsYAZhC","exec_duration":77.556}]},{"taskName":"react_headless_migration","instruction":"$a","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"react_headless_migration__fdM6cKB","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":251.935,"latency_breakdown":{"env_setup":13.862,"agent_setup":41.304,"agent_exec":152.1,"verifier":17.66},"taskName":"react_headless_migration","jobId":"fdM6cKB","exec_duration":152.1}]},{"taskName":"react_native_inbox_mock","instruction":"$b","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"react_native_inbox_mock__xoDeaEH","model":"gemini-3-flash","agent":"Pochi","passed":false,"reward":0,"error":false,"latency_sec":593.522,"latency_breakdown":{"env_setup":22.986,"agent_setup":28.114,"agent_exec":199.271,"verifier":326.648},"taskName":"react_native_inbox_mock","jobId":"xoDeaEH","exec_duration":199.271}]},{"taskName":"slack_channel_integration","instruction":"$c","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"slack_channel_integration__eDpGARh","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":129.582,"latency_breakdown":{"env_setup":11.853,"agent_setup":38.974,"agent_exec":42.044,"verifier":12.638},"taskName":"slack_channel_integration","jobId":"eDpGARh","exec_duration":42.044}]},{"taskName":"sms_twilio_integration","instruction":"$d","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"sms_twilio_integration__YWdXEfR","model":"gemini-3-flash","agent":"Pochi","passed":false,"reward":0,"error":false,"latency_sec":151.038,"latency_breakdown":{"env_setup":11.549,"agent_setup":57.774,"agent_exec":51.526,"verifier":15.063},"taskName":"sms_twilio_integration","jobId":"YWdXEfR","exec_duration":51.526}]},{"taskName":"teams_channel_integration","instruction":"$e","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"teams_channel_integration__nwxxbQ4","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":126.977,"latency_breakdown":{"env_setup":13.66,"agent_setup":45.272,"agent_exec":36.857,"verifier":13.494},"taskName":"teams_channel_integration","jobId":"nwxxbQ4","exec_duration":36.857}]},{"taskName":"transactional_stripe_notification","instruction":"$f","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"transactional_stripe_notificatio__Yfs8D5J","model":"gemini-3-flash","agent":"Pochi","passed":false,"reward":0,"error":false,"latency_sec":156.312,"latency_breakdown":{"env_setup":13.939,"agent_setup":35.435,"agent_exec":69.596,"verifier":18.519},"taskName":"transactional_stripe_notificatio","jobId":"Yfs8D5J","exec_duration":69.596}]},{"taskName":"update_user_preferences_api","instruction":"$10","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"update_user_preferences_api__qC26YAy","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":116.054,"latency_breakdown":{"env_setup":3.715,"agent_setup":36.323,"agent_exec":45.846,"verifier":14.431},"taskName":"update_user_preferences_api","jobId":"qC26YAy","exec_duration":45.846}]},{"taskName":"user_creation_on_the_fly","instruction":"$11","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"user_creation_on_the_fly__iuy6hTL","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":158.197,"latency_breakdown":{"env_setup":3.901,"agent_setup":60.371,"agent_exec":62.082,"verifier":13.597},"taskName":"user_creation_on_the_fly","jobId":"iuy6hTL","exec_duration":62.082}]},{"taskName":"webhook_event_handling","instruction":"# MagicBell Webhook Event Handling\n\n## Background\nMagicBell can send webhook events when users interact with notifications. Create an Express.js server that listens for these webhooks and logs the event data.\n\n## Requirements\n- Create an Express app with a `POST /webhooks/magicbell` endpoint.\n- Parse the incoming JSON payload.\n- The webhook payload has the following structure: `{\"event\": \"notification_read\", \"notification\": {\"id\": \"notif_123\"}, \"user\": {\"email\": \"test@example.com\"}}`.\n- If the event type is `notification_read`, append a line with the format `<notification_id> read by <user_email>` to a log file `magicbell_events.log`.\n- Respond with 200 OK.\n\n## Implementation Guide\n1. Initialize a Node.js project in `/home/user/project`.\n2. Install `express`.\n3. Create `server.js` implementing the endpoint.\n\n## Constraints\n- Project path: `/home/user/project`\n- Start command: `node server.js`\n- Port: 3000\n- Log file: `/home/user/project/magicbell_events.log`","trials":[{"job_name":"2026-05-06__19-48-42","trial_name":"webhook_event_handling__qESuZJZ","model":"gemini-3-flash","agent":"Pochi","passed":true,"reward":1,"error":false,"latency_sec":198.066,"latency_breakdown":{"env_setup":9.286,"agent_setup":52.016,"agent_exec":98.276,"verifier":15.049},"taskName":"webhook_event_handling","jobId":"qESuZJZ","exec_duration":98.276}]}]}]]}],["$L12","$L13"],"$L14"]}],"loading":null,"isPartial":false}
+12:["$","script","script-0",{"src":"/magicbell-benchmark/_next/static/chunks/5a582eaea2c9706d.js","async":true}]
+13:["$","script","script-1",{"src":"/magicbell-benchmark/_next/static/chunks/be08138953094657.js","async":true}]
+14:["$","$L15",null,{"children":["$","$16",null,{"name":"Next.MetadataOutlet","children":"$@17"}]}]
+17:null
